@@ -52,3 +52,64 @@ button {
 .read {
     background-color: green;
 }
+
+#addBook {
+    margin-bottom: 15px;
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#bookForm {
+    padding: 10px 0px;
+}
+#bookFormBG {
+    background-color: lightgrey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 300px;
+    text-align: right;
+}
+
+input {
+    margin: 5px 0px 0px 15px;
+}
+
+#checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+label {
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+.show {
+    display: yes;
+}
+
+#hasRead {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#submit {
+    width: 75%;
+    font-size: 18px;
+    font-weight: strong;
+    height: fit-content;
+    height: 30px;
+}
+
+#lastRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
