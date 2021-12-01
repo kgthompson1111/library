@@ -22,7 +22,7 @@ let myLibrary = [];
         bookFormBG.setAttribute('style', 'display: none');
         addBook.removeEventListener('click', hideForm);
         addBook.addEventListener('click', showForm);
-        addBook.innerText = "show form";
+        addBook.innerText = "Add a book";
     }
 
     // create new BOOK object that contains a title, author, #pages, status
