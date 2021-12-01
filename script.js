@@ -4,6 +4,12 @@ let myLibrary = [];
     //hide the book form
     bookFormBG.setAttribute('style', 'display:none');
 
+    // set inputs to blank since they seem to load from cache
+    bookForm.elements['author'].value = "";
+    bookForm.elements['title'].value = "";
+    bookForm.elements['pages'].value = "";
+    bookForm.elements['hasRead'].checked = false;
+
     //show and hide form functions for book form
     function showForm() {
         bookFormBG.setAttribute('style', 'display: yes');
@@ -186,7 +192,13 @@ submit.addEventListener('click', () => {
         //renumber the array
     });
 
-    // append elements
+    // set the inputs to blank state
+    bookForm.elements['author'].value = "";
+    bookForm.elements['title'].value = "";
+    bookForm.elements['pages'].value = "";
+    bookForm.elements['hasRead'].checked = false;
+
+    // append elements to bookshelf
 
     bookCard.appendChild(deleteButton);
     bookCard.appendChild(readButton);
