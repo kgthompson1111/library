@@ -41,6 +41,9 @@ h1 {
     border-radius: 8px;
 }
 
+.bookText {
+    margin-left: 10px;
+}
 button {
     border: 1px solid black;
     height: 30px;

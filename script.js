@@ -28,19 +28,13 @@ let myLibrary = [];
         this.read = read;
     }
 
-    // make some dummy books
+    // dummy books
 
-    myLibrary[0] = new Book('Book1', 'Author', 100, true);
+    myLibrary[0] = new Book('The Book of Chuang Tzu', 'Zhuang Zhou', 352, true);
 
-    myLibrary[1] = new Book('Book2', 'Author', 100, true);
+    myLibrary[1] = new Book('The \"I AM\" Discourses', 'Beloved St. Germaine', 236, true);
 
-    myLibrary[2] = new Book('Book3', 'Author', 100, true);
-
-    myLibrary[3] = new Book('Book4', 'Author', 100, false);
-
-    myLibrary[4] = new Book('Book5', 'Author', 100, false);
-
-    
+    myLibrary[2] = new Book('Unveiled Mysteries', 'Godfre Ray King', 261, false);
     // displayLibrary function - loops through the myLibrary array and adds a card for each book
 
     function displayLibrary() {
@@ -51,8 +45,8 @@ let myLibrary = [];
                 bookCard.classList.add('book');
                 myLibrary[i].read ? bookCard.classList.add('read') : null;
                 bookCard.innerHTML = 
-                    `${myLibrary[i].author} - ${myLibrary[i].title}<br>
-                    ${myLibrary[i].pages} pages<br>
+                    `<div class="bookText">${myLibrary[i].author}: <em>${myLibrary[i].title}</em><br>
+                    ${myLibrary[i].pages} pages</div>
                     `;
 
                 // create and append a "read" button that changes the read status
@@ -149,9 +143,9 @@ submit.addEventListener('click', () => {
 
     myLibrary[i].read ? bookCard.classList.add('read') : null;
     bookCard.innerHTML = 
-        `${myLibrary[i].author} - ${myLibrary[i].title}<br>
-        ${myLibrary[i].pages} pages<br>
-        `;
+    `<div class="bookText">${myLibrary[i].author}: <em>${myLibrary[i].title}</em><br>
+    ${myLibrary[i].pages} pages</div>
+    `;
     
     // create and append a "read" button that changes the read status
     const readButton = document.createElement('button');
