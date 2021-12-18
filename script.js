@@ -27,11 +27,13 @@ let myLibrary = [];
 
     // create new BOOK object that contains a title, author, #pages, status
 
-    function Book(title, author, pages, read) {
+    class Book {
+        constructor (title, author, pages, read) {
         this.title = title;
         this.author = author;
         this.pages = pages;
         this.read = read;
+        } 
     }
 
     // dummy books
