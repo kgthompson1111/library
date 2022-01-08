@@ -14,9 +14,9 @@
     <button id="addBook">Add a book</button>
     <div id="bookFormBG">
         <form id="bookForm">
-            <label for="author">Author: <input id="author" type="text"></label><br>
-            <label for="title">Title: <input id="title" type="text"></label><br>
-            <label for="pages">Length: <input id="pages" type="number"></label><br>
+            <label for="author">Author: <input id="author" type="text" required></label><br>
+            <label for="title">Title: <input id="title" type="text" required></label><br>
+            <label for="pages">Length: <input id="pages" type="number" required min="1"></label><br>
             <div id="lastRow">
             <input type="button" id="submit" value="add book"></input>
             <label for="hasRead" id="readBox">Read? <input id="hasRead" type="checkbox"></label>

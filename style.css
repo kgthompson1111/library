@@ -135,3 +135,7 @@ label {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+input:invalid {
+    border: solid 2px red;
+}
